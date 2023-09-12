@@ -4,7 +4,7 @@ Easily fix "The installation cannot continue as the installer file may be damage
 # HOW TO USE
 first Download Project into your mac using this command:  
   
-git clone https://github.com/foryasbot/appfixer-mac.git && cd appfixer-mac  
+git clone https://github.com/foryasbot/appfixer-mac.git && cd appfixer-mac && chmod +x appfixer  
   
 # run
 now type ./appfixer then drag and drop your damaged app on terminal like this:  
