@@ -1,0 +1,20 @@
+#!/bin/bash
+arg=$@
+if ! [ -e "$arg" ]; then
+    printf "\n"
+    echo "Error! Your Path of Application Not Found.Please Drag Application into terminal after type ./appfixer for example: ./appfixer YOUR APPLICATION PATH IS HERE"
+    printf "\n"
+    exit
+fi
+# fix The installation cannot continue as the installer file may be damaged. Download the installer file again.
+echo "Patching..."
+sudo xattr -d com.apple.quarantine $arg 2>/dev/null
+echo "Running Application..."
+open $arg
+printf "\n"
+echo "Successfuly patched!"
+printf "\n"
+echo "Dont Forget give me stars ;)"
+printf "\n"
+echo "if you need help you can email me ;) foryas7@icloud.com"
+printf "\n"
